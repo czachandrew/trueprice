@@ -55,7 +55,7 @@
                   <a class="nav-link" href="/#/about">About</a>
                 </li>
                 <li class="mb-3 nav-item">
-                  <a class="nav-link" href="/#/parts">Parts</a>
+                  <router-link class="nav-link" to="/parts">Parts</router-link>
                 </li>
 
                 <li class="nav-item">
