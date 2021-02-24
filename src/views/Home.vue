@@ -23,7 +23,7 @@
             distribution mechanism.
           </p>
           <!-- Buttons -->
-          <a href="#" class="btn btn-primary shadow mr-1">
+          <a href="/#/learnmore" class="btn btn-primary shadow mr-1">
             Learn More
           </a>
           <a href="/#/contact" class="btn btn-outline-primary">
