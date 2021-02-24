@@ -64,7 +64,7 @@
           </p>
         </div>
         <div class="col-lg-4 col-md-4">
-          <h5><span class="text-theme font-w-7">06.</span> Stock</h5>
+          <h5><span class="text-theme font-w-7">07.</span> Stock</h5>
           <p>
             We stock the top most common bulk parts. Cold spares are sent with
             larger orders to eliminate any possible down-time.

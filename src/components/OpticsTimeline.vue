@@ -59,7 +59,7 @@ export default defineComponent({
   setup() {
     const events = [
       {
-        title: "Uncoded Optices ordered from Taiwan or China",
+        title: "Uncoded Optics ordered from Taiwan or China",
         description:
           "Almost all major OEM's and third party providers order from the same handful of factories in Asia. These products are just 'dumb metal' or uncoded optics that are shipped to the US and coded here.",
         icon: "pi pi-shopping-cart",

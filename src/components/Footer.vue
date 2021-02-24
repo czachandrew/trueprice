@@ -55,7 +55,7 @@
                   <a class="nav-link" href="/#/about">About</a>
                 </li>
                 <li class="mb-3 nav-item">
-                  <a class="nav-link" href="/#/products">Parts</a>
+                  <a class="nav-link" href="/#/parts">Parts</a>
                 </li>
 
                 <li class="nav-item">

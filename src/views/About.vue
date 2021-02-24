@@ -19,21 +19,21 @@
             <div class="row align-items-center">
               <div class="col-6">
                 <img
-                  src="/images/about/10.jpg"
+                  src="/images/bulb.jpg"
                   class="img-fluid rounded shadow-lg"
                   alt="..."
                 />
               </div>
               <div class="col-6">
                 <img
-                  src="/images/about/12.jpg"
+                  src="/images/datacenter.jpeg"
                   class="img-fluid rounded shadow-lg mt-10"
                   alt="..."
                 />
               </div>
               <div class="col-10 ml-auto mr-auto mt-n11">
                 <img
-                  src="/images/about/11.jpg"
+                  src="/images/team.jpg"
                   class="img-fluid rounded shadow-lg"
                   alt="..."
                 />
