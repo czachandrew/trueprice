@@ -4,7 +4,7 @@
       <div class="row align-items-center">
         <div class="col-12 col-lg-5 col-lg-6 order-lg-2 mb-8 mb-lg-0">
           <!-- Image -->
-          <img src="@/assets/images/hero/01.png" class="img-fluid" alt="..." />
+          <img src="/images/product/qsfps.jpg" class="img-fluid" alt="..." />
         </div>
         <div class="col-12 col-lg-7 col-xl-6 order-lg-1">
           <!-- Heading -->
@@ -26,7 +26,7 @@
           <a href="#" class="btn btn-primary shadow mr-1">
             Learn More
           </a>
-          <a href="#" class="btn btn-outline-primary">
+          <a href="/#/contact" class="btn btn-outline-primary">
             Get Started
           </a>
         </div>
@@ -64,7 +64,7 @@
               In reality most networks operate on an offering of 25 or so SKU's
               - so why do most optics companies stock thousands?
             </p>
-            <a class="btn-link" href="#">Read Details</a>
+            <!-- <a class="btn-link" href="#">Read Details</a> -->
           </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-6 mb-8 mb-md-0">
@@ -77,7 +77,7 @@
               Optics are essentially light bulbs, we dismiss with the overly
               complex descriptions and just help you find what you need.
             </p>
-            <a class="btn-link" href="#">Read Details</a>
+            <!-- <a class="btn-link" href="#">Read Details</a> -->
           </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-6 mt-6 mt-sm-0">
@@ -90,7 +90,7 @@
               We have a fixed adder for all of our orders, paying % commissions
               just encourages bloat. We charge in line with the value we add.
             </p>
-            <a class="btn-link" href="#">Read Details</a>
+            <!-- <a class="btn-link" href="#">Read Details</a> -->
           </div>
         </div>
       </div>

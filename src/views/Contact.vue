@@ -88,12 +88,11 @@
               </div>
               <div class="form-group col-md-6">
                 <select class="form-control">
-                  <option>- Select Service</option>
-                  <option>Consulting</option>
-                  <option>Finance</option>
-                  <option>Marketing</option>
-                  <option>Avanced Analytics</option>
-                  <option>planning</option>
+                  <option>- Select Category</option>
+                  <option>Technical Support</option>
+                  <option>Sales</option>
+                  <option>Partnership</option>
+                  <option>Other</option>
                 </select>
               </div>
               <div class="form-group col-md-6">
@@ -121,8 +120,8 @@
                 <div class="help-block with-errors"></div>
               </div>
               <div class="col-md-12 mt-4">
-                <button class="btn btn-primary">
-                  <span>Send Messages</span>
+                <button class="btn btn-primary" @click="submit">
+                  <span>Send Message</span>
                 </button>
               </div>
             </form>
@@ -197,5 +196,26 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-export default defineComponent({});
+import { useToast } from "primevue/usetoast";
+
+export default defineComponent({
+  setup() {
+    const toast = useToast();
+    return { toast };
+  },
+  data() {
+    return {};
+  },
+  methods: {
+    submit() {
+      this.toast.add({
+        severity: "success",
+        summary: "Success",
+        detail: "Thanks for reaching out, redirecting to home",
+        life: 3000
+      });
+      setTimeout(this.$router.push("/"), 1500);
+    }
+  }
+});
 </script>

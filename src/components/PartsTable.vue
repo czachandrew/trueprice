@@ -43,7 +43,7 @@
       </template>
     </Column>
     <template #footer>
-      In total there are {{ products ? products.length : 0 }} products.
+      In total there are {{ productsData ? productsData.length : 0 }} products.
     </template>
   </DataTable>
 </template>
@@ -68,9 +68,9 @@ setup() {
       "code": "f230fh0g3",
       "name": "SFP-10G-TPO",
       "description": "Product Description",
-      "image": "https://via.placeholder.com/50",
+      "image": "/images/product/sfp.jpeg",
       "price": 65,
-      "category": "Accessories",
+      "category": "Transceivers",
       "quantity": 24,
       "inventoryStatus": "INSTOCK",
       "rating": 5
@@ -80,9 +80,9 @@ setup() {
       "code": "nvklal433",
       "name": "SFP-20G-TPO",
       "description": "Product Description",
-      "image": "https://via.placeholder.com/50",
+      "image": "/images/product/sfp.jpeg",
       "price": 72,
-      "category": "Accessories",
+      "category": "Transceivers",
       "quantity": 61,
       "inventoryStatus": "INSTOCK",
       "rating": 4
@@ -92,7 +92,7 @@ setup() {
       "code": "zz21cz3c1",
       "name": "SFP-40G-TPO",
       "description": "Product Description",
-      "image": "https://via.placeholder.com/50",
+      "image": "/images/product/sfp.jpeg",
       "price": 79,
       "category": "Transceivers",
       "quantity": 2,
@@ -102,87 +102,88 @@ setup() {
     {
       "id": "1003",
       "code": "244wgerg2",
-      "name": "SFP_BLAH-BLAH",
+      "name": "QSFP-40G-TPO",
       "description": "Product Description",
-      "image": "https://via.placeholder.com/50",
+      "image": "/images/product/sfp.jpeg",
       "price": 29,
       "category": "Transceivers",
       "quantity": 25,
       "inventoryStatus": "INSTOCK",
       "rating": 5
     },
-    {
-      "id": "1004",
-      "code": "h456wer53",
-      "name": "SFP_BLAH-BLAH",
-      "description": "Product Description",
-      "image": "https://via.placeholder.com/50",
-      "price": 15,
-      "category": "Accessories",
-      "quantity": 73,
-      "inventoryStatus": "INSTOCK",
-      "rating": 4
-    },
-    {
-      "id": "1005",
-      "code": "av2231fwg",
-      "name": "SFP_BLAH-BLAH",
-      "description": "Product Description",
-      "image": "https://via.placeholder.com/50",
-      "price": 120,
-      "category": "Accessories",
-      "quantity": 0,
-      "inventoryStatus": "OUTOFSTOCK",
-      "rating": 4
-    },
-    {
-      "id": "1006",
-      "code": "bib36pfvm",
-      "name": "SFP_BLAH-BLAH",
-      "description": "Product Description",
-      "image": "https://via.placeholder.com/50",
-      "price": 32,
-      "category": "Accessories",
-      "quantity": 5,
-      "inventoryStatus": "LOWSTOCK",
-      "rating": 3
-    },
-    {
-      "id": "1007",
-      "code": "mbvjkgip5",
-      "name": "SFP_BLAH-BLAH",
-      "description": "Product Description",
-      "image": "https://via.placeholder.com/50",
-      "price": 34,
-      "category": "Accessories",
-      "quantity": 23,
-      "inventoryStatus": "INSTOCK",
-      "rating": 5
-    },
-    {
-      "id": "1008",
-      "code": "vbb124btr",
-      "name": "SFP_BLAH-BLAH",
-      "description": "Product Description",
-      "image": "https://via.placeholder.com/50",
-      "price": 99,
-      "category": "Electronics",
-      "quantity": 2,
-      "inventoryStatus": "LOWSTOCK",
-      "rating": 4
-    },
-    {
-      "id": "1009",
-      "code": "cm230f032",
-      "name": "SFP_BLAH-BLAH",
-      "description": "Product Description",
-      "image": "https://via.placeholder.com/50",
-      "price": 299,
-      "category": "Electronics",
-      "quantity": 63,
-      "inventoryStatus": "INSTOCK",
-      "rating": 3
-    }];
+    // {
+    //   "id": "1004",
+    //   "code": "h456wer53",
+    //   "name": "SFP_BLAH-BLAH",
+    //   "description": "Product Description",
+    //   "image": "/images/product/sfp.jpeg",
+    //   "price": 15,
+    //   "category": "Accessories",
+    //   "quantity": 73,
+    //   "inventoryStatus": "INSTOCK",
+    //   "rating": 4
+    // },
+    // {
+    //   "id": "1005",
+    //   "code": "av2231fwg",
+    //   "name": "SFP_BLAH-BLAH",
+    //   "description": "Product Description",
+    //   "image": "/images/product/sfp.jpeg",
+    //   "price": 120,
+    //   "category": "Accessories",
+    //   "quantity": 0,
+    //   "inventoryStatus": "OUTOFSTOCK",
+    //   "rating": 4
+    // },
+    // {
+    //   "id": "1006",
+    //   "code": "bib36pfvm",
+    //   "name": "SFP_BLAH-BLAH",
+    //   "description": "Product Description",
+    //   "image": "/images/product/sfp.jpeg",
+    //   "price": 32,
+    //   "category": "Accessories",
+    //   "quantity": 5,
+    //   "inventoryStatus": "LOWSTOCK",
+    //   "rating": 3
+    // },
+    // {
+    //   "id": "1007",
+    //   "code": "mbvjkgip5",
+    //   "name": "SFP_BLAH-BLAH",
+    //   "description": "Product Description",
+    //   "image": "/images/product/sfp.jpeg",
+    //   "price": 34,
+    //   "category": "Accessories",
+    //   "quantity": 23,
+    //   "inventoryStatus": "INSTOCK",
+    //   "rating": 5
+    // },
+    // {
+    //   "id": "1008",
+    //   "code": "vbb124btr",
+    //   "name": "SFP_BLAH-BLAH",
+    //   "description": "Product Description",
+    //   "image": "/images/product/sfp.jpeg",
+    //   "price": 99,
+    //   "category": "Electronics",
+    //   "quantity": 2,
+    //   "inventoryStatus": "LOWSTOCK",
+    //   "rating": 4
+    // },
+    // {
+    //   "id": "1009",
+    //   "code": "cm230f032",
+    //   "name": "SFP_BLAH-BLAH",
+    //   "description": "Product Description",
+    //   "image": "/images/product/sfp.jpeg",
+    //   "price": 299,
+    //   "category": "Electronics",
+    //   "quantity": 63,
+    //   "inventoryStatus": "INSTOCK",
+    //   "rating": 3
+    // }
+    ];
     // const products = productService.getProductsSmall().then(res => productsData = res );
     return {  productsData };
   },
